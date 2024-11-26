@@ -76,6 +76,47 @@ public class BuscaLargura {
 
 
 
+    // versão com custo entre os caminhos
+            public boolean achouElementoComCusto(Map< Integer, List<int[]> > grafo, int inicio, int objetivo){
+                List<TreeNodeCusto> fila = new ArrayList<>();
+                TreeNodeCusto inicial = new TreeNodeCusto(inicio, 0);
+                fila.add(inicial);
+
+                HashSet<Integer> visitados = new HashSet<>();
+                
+                while(! fila.isEmpty()){
+                    int index_menorCusto = 0;
+
+                    for(int i = 1; i < fila.size(); i++){
+                        int custoNoAtual = fila.get(i).custo;
+                        int menorCusto = fila.get(index_menorCusto).custo;
+
+                        if(custoNoAtual < menorCusto) index_menorCusto = i;
+                    }
+
+
+                    TreeNodeCusto atual = fila.remove(index_menorCusto);
+
+                    if(visitados.contains(atual.val)) continue;
+
+                    if(atual.val == objetivo) return true;
+
+                    List<int[]> vizinhos = map.getOrDefault(atual.val, new ArrayList<>());
+                    for(int[] vizinho : vizinhos){
+                        int vizinhoValor = vizinho[0];
+                        int vizinhoCusto = vizinho[1];
+
+                        if(!visitados.contains(vizinhoValor)){
+                            TreeNodeCusto novoNo = new TreeNodeCusto(vizinhoValor, atual.custo + vizinhoCusto);
+                            fila.add(novoNo);
+
+                        }
+                    }
+                }
+                return false;
+            }
+
+
 
 
 
