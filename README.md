@@ -57,7 +57,8 @@ Exercícios para testar e fortalecer seus conhecimentos, com gabaritos para voc�
 
 - [**Prova 1**]()  
   Principais algoritmos de busca (Largura, profundidade, A*), Diferenciar busca com e sem informação, Conceito de agentes e ambientes, Algoritmos genéticos*
-  * Costuma ser cobrado nas provas da Prof. Priscila 👩‍🏫  
+  
+  *Costuma ser cobrado nas provas da Prof. Priscila 👩‍🏫  
 
 - [**Prova 2**](#) *(em construção)*  
   
