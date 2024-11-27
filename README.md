@@ -49,7 +49,9 @@ Aqui você encontra os materiais teóricos essenciais para a disciplina, incluin
 
 ## ✍️ Exercícios e Gabaritos  
 
-Exercícios para testar e fortalecer seus conhecimentos, com gabaritos para você verificar as soluções.  
+- [**Listas**](https://github.com/Maracujacake/hee-ia/blob/main/javab/BuscaLargura.java)
+- [**Gabaritos**](https://github.com/Maracujacake/hee-ia/blob/main/javab/BuscaLargura.java)
+- [**Mais exercícios**](https://github.com/Maracujacake/hee-ia/blob/main/javab/BuscaLargura.java)    
 
 ---
 
