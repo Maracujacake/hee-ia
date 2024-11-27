@@ -33,7 +33,17 @@ Aqui você encontra os materiais teóricos essenciais para a disciplina, incluin
 
 ## 🖥️ Implementações e Exemplos  
 
-Exemplos práticos e implementações passo a passo que ajudam a consolidar o aprendizado por meio de aplicações reais.  
+### 📌 Principais algoritmos vistos na disciplina:  
+
+- [**Busca em Largura**](https://github.com/Maracujacake/hee-ia/blob/main/javab/BuscaLargura.java)  
+  Explora todos os nós de um grafo camada por camada. Útil para encontrar o caminho mais curto em grafos não ponderados.  
+
+- [**Busca em Profundidade**](#) *(em construção)*  
+  Percorre os nós de um grafo explorando ao máximo cada ramificação antes de retroceder.  
+
+- [**Busca com Custo**](#) *(em construção)*  
+  Algoritmo de busca que considera custos associados às arestas para encontrar o caminho mais eficiente.  
+.
 
 ---
 
@@ -45,7 +55,15 @@ Exercícios para testar e fortalecer seus conhecimentos, com gabaritos para voc�
 
 ## 📝 Provas  
 
-Coleção de provas anteriores para estudo e preparação.  
+- [**Prova 1**]()  
+  Principais algoritmos de busca (Largura, profundidade, A*), Diferenciar busca com e sem informação, Conceito de agentes e ambientes, Algoritmos genéticos*
+  * Costuma ser cobrado nas provas da Prof. Priscila 👩‍🏫  
+
+- [**Prova 2**](#) *(em construção)*  
+  
+
+- [**Prova 3**](#) *(em construção)*  
+    
 
 ---
 
