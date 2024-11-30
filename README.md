@@ -26,8 +26,8 @@ para que o aluno possa usufruir e absorver o máximo enquanto cursa a disciplina
 ## 📘 Leituras e Slides  
 
 Aqui você encontra os materiais teóricos essenciais para a disciplina, incluindo:  
-- Leituras recomendadas.  
-- Slides utilizados em aula.
+- [**Buscas**](https://github.com/Maracujacake/hee-ia/blob/main/Buscas.md)
+
 
 ---
 
@@ -35,7 +35,7 @@ Aqui você encontra os materiais teóricos essenciais para a disciplina, incluin
 
 ### 📌 Principais algoritmos vistos na disciplina:  
 
-- [**Busca em Largura**](https://github.com/Maracujacake/hee-ia/blob/main/javab/BuscaLargura.java)  
+- [**Busca em Largura**](https://github.com/Maracujacake/hee-ia/blob/main/Implementa%C3%A7%C3%B5es/BuscaLargura/javab/BuscaLargura.java)  
   Explora todos os nós de um grafo camada por camada. Útil para encontrar o caminho mais curto em grafos não ponderados.  
 
 - [**Busca em Profundidade**](#) *(em construção)*  
