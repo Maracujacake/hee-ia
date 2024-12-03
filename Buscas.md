@@ -98,3 +98,10 @@ Tempo: 𝑂(𝑉 + 𝐸 log⁡𝑉)*
 Espaço: Proporcional ao tamanho do grafo.
 
 https://youtu.be/XyoucHYKYSE - visualização do algoritmo
+
+
+## 4. Busca Informada 
+
+### 4.1 Branch and Bound
+
+O Branch and Bound (b&B) é um algoritmo que explora o espaço de soluções de maneira sistemática e evita considerar subespaços inviáveis, economizando tempo. Ele funciona como uma busca em árvore, onde cada nó representa uma subsolução parcial ou um estado do problema.
