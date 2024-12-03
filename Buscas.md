@@ -104,4 +104,27 @@ https://youtu.be/XyoucHYKYSE - visualização do algoritmo
 
 ### 4.1 Branch and Bound
 
-O Branch and Bound (b&B) é um algoritmo que explora o espaço de soluções de maneira sistemática e evita considerar subespaços inviáveis, economizando tempo. Ele funciona como uma busca em árvore, onde cada nó representa uma subsolução parcial ou um estado do problema.
+Branch and Bound (b&B), também conhecido como alg. de "força bruta" (não exatamente) inteligente, é um algoritmo que explora o espaço de soluções de maneira sistemática e evita considerar subespaços inviáveis, economizando tempo. Ele funciona como uma busca em árvore, onde cada nó representa uma subsolução parcial ou um estado do problema.
+
+**Branch** (Ramifica, faz a árvore de estados a partir do estado atual) and **Bound** (Define um limite e poda o que for pior do que aquele limite ou, pelo menos, não o considera atualmente)
+
+A partir de uma solução viável, ignoramos aquelas que pareçam mais custosas ou inviáveis, focando apenas no que for menor ou igual ao custo já obtido
+
+[>> vídeo explicativo (créditos ao prof. Mário 😎) <<](https://youtu.be/1UPNxELq8Uw)
+
+[>> leitura explicativa com exemplos <<](https://www.javatpoint.com/branch-and-bound)
+
+[>> implementação do caixeiro viajante (python) <<]()
+
+Tempo: 
+ - Difícil de mensurar sem um problema
+ - Para o problema do caixeiro viajante: No pior caso e com pode ineficaz ... O(n!) 😨
+ - - Pois deve explorar todas as permutações de cidades possíveis e, como a poda se mostra ineficaz, continua testando exaustivamente
+ - Caso a poda seja extremamente eficiente, pode-se chegar em soluções de O(n^2) ou até O(n log n) 👀
+
+Traduzindo, depende do problema, dos dados do problema e depende também da função que define o bound
+
+### 4.2 Busca Gulosa
+
+
+### 4.3 Busca A*
