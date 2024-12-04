@@ -124,7 +124,26 @@ Tempo:
 
 Traduzindo, depende do problema, dos dados do problema e depende também da função que define o bound
 
-### 4.2 Busca Gulosa
 
+### 4.2 Best-First
 
-### 4.3 Busca A*
+O Best-First Search (Busca pelo Melhor Primeiro) é um algoritmo de busca informada, no qual a exploração do grafo é guiada por uma função de avaliação (heurística) que prioriza os nós que parecem ser mais promissores em relação ao objetivo.
+
+O algoritmo vai ordernar e priorizar os valores dados pela heurística e não (somente) os pesos das arestas entre os nós, sendo assim, *dependendo da implementação*, pode não achar o resultado ótimo.
+
+[>> vídeo de explicação com exemplo <<](https://youtu.be/i4MA_hFkKDg)
+
+[>> implementação em python utilizando heap <<]()
+
+[>> explicando o greedy-best-first <<](https://youtu.be/dv1m3L6QXWs)
+
+*perceba que no vídeo, outra abordagem é utilizada, lançando mão de duas listas que salvam os nós e verificam constantemente os valores das heurísticas desses nós
+
+### 4.3 Busca Gulosa
+
+É um algoritmo relativamente simples, que apesar de rápido, infelizmente **não garante a solução ótima**. Ele funciona sempre **priorizando o caminho cuja heurística é menor**. MUITO parecido com o anterior, não é? Bom, algumas implementações do best-first costumam se parecer com o próximo algoritmo (A*), *onde além de levar em consideração o valor da heurística, ele leva também em consid. o custo entre os nós*, **já aqui isso não acontece**.
+
+O termo "guloso" **não se refere a um tipo de busca específico** e sim a uma técnica de programação que também pode ser vista em programação dinâmica ou em outros algoritmos. Inclusive, na implementação em python do algoritmo anterior, a ideia geral utilizada é chamada de *"greedy-best-first"* pois combina as duas ideias. É interessante, né? *Não são classificações rígidas, mas sim um conjunto de ideias unificadas pra tentar otimizar algo tão comum quanto a busca de um elemento.*
+
+### 4.4 Busca A*
+
