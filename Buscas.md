@@ -147,3 +147,48 @@ O termo "guloso" **não se refere a um tipo de busca específico** e sim a uma t
 
 ### 4.4 Busca A*
 
+Como apontado em algumas explicações anteriores, a diferença agora é que consideraremos sempre o valor da **heurística somado com o custo entre os nós**
+
+f(n) = g(n) + h(n) -> entenda como: custo_total_de_vdd = ( custo_entre_nós + heuristica_do_nó )
+
+[>> video explicativo com exemplo <<](https://youtu.be/PzEWHH2v3TE)
+
+Visualização do algoritmo em diversos cenários:
+
+<img src="https://miro.medium.com/v2/resize:fit:1400/1*l0IkrbNLnkCB1VzDq2Qy7A.gif">
+
+<br>
+
+[>> implementação em python <<]()
+
+**Qual a complexidade do algoritmo?** Bom, quando se trata de **algoritmos que dependem da heurística** pra alguma coisa, é natural pensar que **sua complexidade TAMBÉM vá depender dela**, mas em casos gerais:
+
+tempo: O(b^d)
+
+espaço: O(b^d)
+
+onde b é o **tamanho do menor caminho** e d é o **número de ligações possíveis a cada nó** do menor caminho, afinal, temos que fazer a verificação de nó em nó enquanto construímos a solução ótima.
+
+## 5. Busca Local (e por que ela é diferente das anteriores)
+
+#### Ao contrário das buscas anteriores em que usávamos para, por exemplo, encontrar um caminho que levasse a melhor solução, aqui estamos falando de ferramentas que não são feitas para achar um caminho e sim uma solução única e satisfatória. Essa solução nem tem a obrigação de ser ótima, apenas satisfatória para o limite que lhe foi imposta.
+
+#### Na maioria das vezes, os algoritmos anteriores (A*, Branch and Bound, Greedy-Best-First) usávamos uma fila de prioridade (heap) como estrutura de dados principal que ditava o comportamento do algoritmo, aqui a coisa muda de figura. Como não precisamos de um caminho e sim apenas uma solução, podemos implementar utilizando somente um estado (uma variável qualquer) e ir alterando o valor da mesma conforme formos encotrando melhores soluções.
+
+### 5.1 Hill Climbing
+
+*O Algoritmo Subida da Encosta do inglês Hill Climbing (HC) é **baseado na ideia de subida do Monte Everest em meio de um nevoeiro denso durante uma crise de amnésia**, onde o objetivo é **chegar no pico mais alto** apenas **examinando os locais mais próximos** (vizinhos) **esquecendo os caminhos anteriores** e **termina quando alcança um pico em que nenhum vizinho tenha o valor mais alto*** - Professor Alan 👨‍🏫
+
+(por incrivel que pareça, é uma descrição MUITO precisa do que o algoritmo faz)
+
+[>> *video com exemplos <<](https://youtu.be/VoUotaCmDk4)
+
+*Como explicado, o algoritmo pode chegar a um platô por conta de valores iguais de heurísticas e ficar perdido, no entanto, isso não o faz menos útil. Acaba dependendo muito mais das informações/dados que você tem sobre o problema.
+
+### 5.2 Simulate Annealing
+
+
+### 5.3 Local Beam
+
+
+### 5.4 Algoritmos Genéticos
