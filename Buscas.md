@@ -114,7 +114,7 @@ A partir de uma solução viável, ignoramos aquelas que pareçam mais custosas 
 
 [>> leitura explicativa com exemplos <<](https://www.javatpoint.com/branch-and-bound)
 
-[>> implementação do caixeiro viajante (python) <<]()
+[>> implementação do caixeiro viajante (python) <<](https://github.com/Maracujacake/hee-ia/blob/main/Implementa%C3%A7%C3%B5es/BranchAndBound/b_and_b.py)
 
 Tempo: 
  - Difícil de mensurar sem um problema
