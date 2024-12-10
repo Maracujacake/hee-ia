@@ -42,7 +42,7 @@ Também chamada de **busca cega**, não utiliza nenhuma informação específica
 
 Utiliza informações heurísticas* para guiar a exploração do espaço de estados, geralmente tornando a busca mais eficiente. Exemplos incluem:
 
- *como heurística, entenda
+ *como heurística, entenda, estimativas pré-estabelecidas para chegar em outro nó. Além da distância de um nó para outro, você terá informações adicionais sobre uma distância "pré-calculada" de um ponto a outro. Com o passar desse readme, as aulas e os vídeos, vai começar a fazer sentido.
 
 - Busca Gulosa.
 
